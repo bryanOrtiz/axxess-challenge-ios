@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D430279FDA882C608920CAD /* Pods_Axxess_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7D443FF6F29E989DE36C68 /* Pods_Axxess_Challenge.framework */; };
+		B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536E81E954CD400B9933B /* AppDelegate.swift */; };
+		B45536EB1E954CD400B9933B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536EA1E954CD400B9933B /* ViewController.swift */; };
+		B45536EE1E954CD400B9933B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45536EC1E954CD400B9933B /* Main.storyboard */; };
+		B45536F01E954CD400B9933B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45536EF1E954CD400B9933B /* Assets.xcassets */; };
+		B45536F31E954CD400B9933B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45536F11E954CD400B9933B /* LaunchScreen.storyboard */; };
+		B45536FE1E954CD400B9933B /* Axxess_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B45536FA1E954CD400B9933B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B45536DD1E954CD300B9933B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B45536E41E954CD300B9933B;
+			remoteInfo = "Axxess Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA3E44B44755D274EA0550CC /* Pods-Axxess Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axxess Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B45536E51E954CD300B9933B /* Axxess Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axxess Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45536E81E954CD400B9933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B45536EA1E954CD400B9933B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B45536ED1E954CD400B9933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B45536EF1E954CD400B9933B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B45536F21E954CD400B9933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B45536F41E954CD400B9933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45536F91E954CD400B9933B /* Axxess ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axxess ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axxess_ChallengeTests.swift; sourceTree = "<group>"; };
+		B45536FF1E954CD400B9933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B5C0337DF1D990D9425234 /* Pods-Axxess Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axxess Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		DF7D443FF6F29E989DE36C68 /* Pods_Axxess_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axxess_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B45536E21E954CD300B9933B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D430279FDA882C608920CAD /* Pods_Axxess_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45536F61E954CD400B9933B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1576A27F1F902652CE2BF086 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA3E44B44755D274EA0550CC /* Pods-Axxess Challenge.debug.xcconfig */,
+				B5B5C0337DF1D990D9425234 /* Pods-Axxess Challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3BDD547AABD1DFF0DAFB6832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF7D443FF6F29E989DE36C68 /* Pods_Axxess_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B45536DC1E954CD300B9933B = {
+			isa = PBXGroup;
+			children = (
+				B45536E71E954CD300B9933B /* Axxess Challenge */,
+				B45536FC1E954CD400B9933B /* Axxess ChallengeTests */,
+				B45536E61E954CD300B9933B /* Products */,
+				1576A27F1F902652CE2BF086 /* Pods */,
+				3BDD547AABD1DFF0DAFB6832 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B45536E61E954CD300B9933B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B45536E51E954CD300B9933B /* Axxess Challenge.app */,
+				B45536F91E954CD400B9933B /* Axxess ChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B45536E71E954CD300B9933B /* Axxess Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				B45536E81E954CD400B9933B /* AppDelegate.swift */,
+				B45536EA1E954CD400B9933B /* ViewController.swift */,
+				B45536EC1E954CD400B9933B /* Main.storyboard */,
+				B45536EF1E954CD400B9933B /* Assets.xcassets */,
+				B45536F11E954CD400B9933B /* LaunchScreen.storyboard */,
+				B45536F41E954CD400B9933B /* Info.plist */,
+			);
+			path = "Axxess Challenge";
+			sourceTree = "<group>";
+		};
+		B45536FC1E954CD400B9933B /* Axxess ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */,
+				B45536FF1E954CD400B9933B /* Info.plist */,
+			);
+			path = "Axxess ChallengeTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B45536E41E954CD300B9933B /* Axxess Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45537021E954CD400B9933B /* Build configuration list for PBXNativeTarget "Axxess Challenge" */;
+			buildPhases = (
+				B4D42AD0829865C2E5EE1DAD /* [CP] Check Pods Manifest.lock */,
+				B45536E11E954CD300B9933B /* Sources */,
+				B45536E21E954CD300B9933B /* Frameworks */,
+				B45536E31E954CD300B9933B /* Resources */,
+				BBC366CEE095F22FF6CFAB40 /* [CP] Embed Pods Frameworks */,
+				A56F7B877F210B43FADA4F5E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Axxess Challenge";
+			productName = "Axxess Challenge";
+			productReference = B45536E51E954CD300B9933B /* Axxess Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B45536F81E954CD400B9933B /* Axxess ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45537051E954CD400B9933B /* Build configuration list for PBXNativeTarget "Axxess ChallengeTests" */;
+			buildPhases = (
+				B45536F51E954CD400B9933B /* Sources */,
+				B45536F61E954CD400B9933B /* Frameworks */,
+				B45536F71E954CD400B9933B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B45536FB1E954CD400B9933B /* PBXTargetDependency */,
+			);
+			name = "Axxess ChallengeTests";
+			productName = "Axxess ChallengeTests";
+			productReference = B45536F91E954CD400B9933B /* Axxess ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B45536DD1E954CD300B9933B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Ortiz;
+				TargetAttributes = {
+					B45536E41E954CD300B9933B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZC9AE4U376;
+						ProvisioningStyle = Automatic;
+					};
+					B45536F81E954CD400B9933B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZC9AE4U376;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B45536E41E954CD300B9933B;
+					};
+				};
+			};
+			buildConfigurationList = B45536E01E954CD300B9933B /* Build configuration list for PBXProject "Axxess Challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B45536DC1E954CD300B9933B;
+			productRefGroup = B45536E61E954CD300B9933B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B45536E41E954CD300B9933B /* Axxess Challenge */,
+				B45536F81E954CD400B9933B /* Axxess ChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B45536E31E954CD300B9933B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45536F31E954CD400B9933B /* LaunchScreen.storyboard in Resources */,
+				B45536F01E954CD400B9933B /* Assets.xcassets in Resources */,
+				B45536EE1E954CD400B9933B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45536F71E954CD400B9933B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A56F7B877F210B43FADA4F5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D42AD0829865C2E5EE1DAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC366CEE095F22FF6CFAB40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B45536E11E954CD300B9933B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45536EB1E954CD400B9933B /* ViewController.swift in Sources */,
+				B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45536F51E954CD400B9933B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45536FE1E954CD400B9933B /* Axxess_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B45536FB1E954CD400B9933B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B45536E41E954CD300B9933B /* Axxess Challenge */;
+			targetProxy = B45536FA1E954CD400B9933B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B45536EC1E954CD400B9933B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45536ED1E954CD400B9933B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B45536F11E954CD400B9933B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45536F21E954CD400B9933B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B45537001E954CD400B9933B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B45537011E954CD400B9933B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B45537031E954CD400B9933B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3E44B44755D274EA0550CC /* Pods-Axxess Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZC9AE4U376;
+				INFOPLIST_FILE = "Axxess Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ortiz.b.t-gmail.com.Axxess-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B45537041E954CD400B9933B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B5C0337DF1D990D9425234 /* Pods-Axxess Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZC9AE4U376;
+				INFOPLIST_FILE = "Axxess Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ortiz.b.t-gmail.com.Axxess-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B45537061E954CD400B9933B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZC9AE4U376;
+				INFOPLIST_FILE = "Axxess ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ortiz.b.t-gmail.com.Axxess-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axxess Challenge.app/Axxess Challenge";
+			};
+			name = Debug;
+		};
+		B45537071E954CD400B9933B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZC9AE4U376;
+				INFOPLIST_FILE = "Axxess ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ortiz.b.t-gmail.com.Axxess-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axxess Challenge.app/Axxess Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B45536E01E954CD300B9933B /* Build configuration list for PBXProject "Axxess Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45537001E954CD400B9933B /* Debug */,
+				B45537011E954CD400B9933B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B45537021E954CD400B9933B /* Build configuration list for PBXNativeTarget "Axxess Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45537031E954CD400B9933B /* Debug */,
+				B45537041E954CD400B9933B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B45537051E954CD400B9933B /* Build configuration list for PBXNativeTarget "Axxess ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45537061E954CD400B9933B /* Debug */,
+				B45537071E954CD400B9933B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B45536DD1E954CD300B9933B /* Project object */;
+}
