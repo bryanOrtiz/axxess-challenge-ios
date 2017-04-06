@@ -29,6 +29,7 @@ class BasicStringTableViewCell: UITableViewCell {
         
         createViewHierarchy()
         setTitleLabelDefaults()
+        setDetailLabelDefaults()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,22 +41,44 @@ class BasicStringTableViewCell: UITableViewCell {
         
         createViewHierarchy()
         setTitleLabelDefaults()
+        setDetailLabelDefaults()
     }
 
     // MARK: Class Methods
     
     func setTitleLabelDefaults() -> Void {
-        idTitleLabel.text = "Id Title"
-        typeTitleLabel.text = "Type Title"
-        dateTitleLabel.text = "Date Title"
-        dataTitleLabel.text = "Data Title"
+        idTitleLabel.text = "Id"
+        idTitleLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+        typeTitleLabel.text = "Type"
+        typeTitleLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+        dateTitleLabel.text = "Date"
+        dateTitleLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+        dataTitleLabel.text = "Data"
+        dataTitleLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+    }
+    
+    func setDetailLabelDefaults() -> Void {
+        idDetailLabel.font = UIFont.systemFont(ofSize: 17.0)
+        typeDetailLabel.font = UIFont.systemFont(ofSize: 17.0)
+        dateDetailLabel.font = UIFont.systemFont(ofSize: 17.0)
+        dataDetailLabel.font = UIFont.systemFont(ofSize: 17.0)
+        
+        idDetailLabel.numberOfLines = 1
+        idDetailLabel.lineBreakMode = NSLineBreakMode.byTruncatingTail
+        typeDetailLabel.numberOfLines = 1
+        typeDetailLabel.lineBreakMode = NSLineBreakMode.byTruncatingTail
+        dateDetailLabel.numberOfLines = 1
+        dateDetailLabel.lineBreakMode = NSLineBreakMode.byTruncatingTail
+        dataDetailLabel.numberOfLines = 1
+        dataDetailLabel.lineBreakMode = .byTruncatingTail
     }
     
     func createViewHierarchy() -> Void {
         
         self.contentView.addSubview(idTitleLabel)
         idTitleLabel.snp.makeConstraints { make in
-            make.leading.trailing.equalTo(self.contentView).offset(16.0)
+            make.leading.equalTo(self.contentView).offset(16.0)
+            make.trailing.equalTo(self.contentView).offset(-16.0)
             make.top.equalTo(self.contentView).offset(8.0)
         }
         

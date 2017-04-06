@@ -59,7 +59,9 @@ class ButtonViewController: UIViewController {
     }
     
     func displayImagesViewController() -> Void {
-        
+        let imageTableVC = ImagesTableViewController()
+        let navController = UINavigationController(rootViewController: imageTableVC)
+        present(navController, animated: true, completion: nil)
     }
 
 }

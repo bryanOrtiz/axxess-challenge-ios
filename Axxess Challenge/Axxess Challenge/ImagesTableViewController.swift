@@ -1,5 +1,5 @@
 //
-//  AllTableViewController.swift
+//  ImagesTableViewController.swift
 //  Axxess Challenge
 //
 //  Created by Bryan Ortiz on 4/6/17.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-class AllTableViewController: UITableViewController {
+class ImagesTableViewController: UITableViewController {
 
-    fileprivate var allData = [AxxessModelObject]()
+    fileprivate var imageData = [AxxessModelObject]()
     
     // MARK: - View Controller Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = "All"
+        
+        self.title = "Image"
         
         self.tableView.register(BasicStringTableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         
@@ -25,29 +25,27 @@ class AllTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView()
         
-        AxxessAlamofire.sharedInstance.getJSONV3 { axxessModelObjects in
-            self.allData = axxessModelObjects
-            self.tableView.reloadData()
-        }
+        self.imageData = AxxessAlamofire.sharedInstance.imageData!
+        self.tableView.reloadData()
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.allData.count
+        return self.imageData.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: BasicStringTableViewCell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! BasicStringTableViewCell
         
-        let aAxxessModelObject = self.allData[indexPath.row]
+        let aAxxessModelObject = self.imageData[indexPath.row]
         
         cell.idDetailLabel.text = aAxxessModelObject.id
         cell.typeDetailLabel.text = aAxxessModelObject.type
