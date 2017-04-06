@@ -14,6 +14,10 @@
 		B45536F01E954CD400B9933B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45536EF1E954CD400B9933B /* Assets.xcassets */; };
 		B45536F31E954CD400B9933B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45536F11E954CD400B9933B /* LaunchScreen.storyboard */; };
 		B45536FE1E954CD400B9933B /* Axxess_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */; };
+		B455370A1E9557E800B9933B /* AxxessAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537091E9557E800B9933B /* AxxessAlamofire.swift */; };
+		B455370D1E96AC8C00B9933B /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455370C1E96AC8C00B9933B /* ButtonViewController.swift */; };
+		B455370F1E96B65900B9933B /* AllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455370E1E96B65900B9933B /* AllTableViewController.swift */; };
+		B45537121E96B70700B9933B /* AccessModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537111E96B70700B9933B /* AccessModelObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		B45536F91E954CD400B9933B /* Axxess ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axxess ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axxess_ChallengeTests.swift; sourceTree = "<group>"; };
 		B45536FF1E954CD400B9933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45537091E9557E800B9933B /* AxxessAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxxessAlamofire.swift; sourceTree = "<group>"; };
+		B455370C1E96AC8C00B9933B /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		B455370E1E96B65900B9933B /* AllTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
+		B45537111E96B70700B9933B /* AccessModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessModelObject.swift; sourceTree = "<group>"; };
 		B5B5C0337DF1D990D9425234 /* Pods-Axxess Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axxess Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		DF7D443FF6F29E989DE36C68 /* Pods_Axxess_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axxess_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,6 +109,9 @@
 		B45536E71E954CD300B9933B /* Axxess Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B45537101E96B6F000B9933B /* Model */,
+				B455370B1E96ABF400B9933B /* View Controllers */,
+				B45537081E9553C400B9933B /* Managers */,
 				B45536E81E954CD400B9933B /* AppDelegate.swift */,
 				B45536EA1E954CD400B9933B /* ViewController.swift */,
 				B45536EC1E954CD400B9933B /* Main.storyboard */,
@@ -118,6 +129,31 @@
 				B45536FF1E954CD400B9933B /* Info.plist */,
 			);
 			path = "Axxess ChallengeTests";
+			sourceTree = "<group>";
+		};
+		B45537081E9553C400B9933B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B45537091E9557E800B9933B /* AxxessAlamofire.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		B455370B1E96ABF400B9933B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B455370C1E96AC8C00B9933B /* ButtonViewController.swift */,
+				B455370E1E96B65900B9933B /* AllTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B45537101E96B6F000B9933B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45537111E96B70700B9933B /* AccessModelObject.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B455370F1E96B65900B9933B /* AllTableViewController.swift in Sources */,
+				B455370D1E96AC8C00B9933B /* ButtonViewController.swift in Sources */,
+				B45537121E96B70700B9933B /* AccessModelObject.swift in Sources */,
 				B45536EB1E954CD400B9933B /* ViewController.swift in Sources */,
+				B455370A1E9557E800B9933B /* AxxessAlamofire.swift in Sources */,
 				B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +531,7 @@
 				B45537041E954CD400B9933B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B45537051E954CD400B9933B /* Build configuration list for PBXNativeTarget "Axxess ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +540,7 @@
 				B45537071E954CD400B9933B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
