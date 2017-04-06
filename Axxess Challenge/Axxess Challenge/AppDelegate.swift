@@ -20,9 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vc = ButtonViewController()
         window?.rootViewController = vc
+
+        AxxessAlamofire.sharedInstance.getJSONV3 { AxxessModelObjects in
+            print(AxxessModelObjects)
+        }
         
-        let json = AxxessAlamofire.sharedInstance.getJSONV2()
-        print(json())
+//        let json = AxxessAlamofire.sharedInstance.getJSONV2()
+//        print(json())
         return true
     }
 

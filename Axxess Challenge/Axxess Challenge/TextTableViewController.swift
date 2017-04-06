@@ -1,5 +1,5 @@
 //
-//  AllTableViewController.swift
+//  TextTableViewController.swift
 //  Axxess Challenge
 //
 //  Created by Bryan Ortiz on 4/6/17.
@@ -8,16 +8,14 @@
 
 import UIKit
 
-class AllTableViewController: UITableViewController {
+class TextTableViewController: UITableViewController {
 
-    fileprivate var allData = [AxxessModelObject]()
-    
-    // MARK: - View Controller Lifecycle
+    fileprivate var textData = [AxxessModelObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "All"
+        self.title = "Text"
         
         self.tableView.register(BasicStringTableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         
@@ -25,10 +23,8 @@ class AllTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView()
         
-        AxxessAlamofire.sharedInstance.getJSONV3 { axxessModelObjects in
-            self.allData = axxessModelObjects
-            self.tableView.reloadData()
-        }
+        self.textData = AxxessAlamofire.sharedInstance.textData!
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -40,14 +36,14 @@ class AllTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.allData.count
+        return self.textData.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: BasicStringTableViewCell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! BasicStringTableViewCell
         
-        let aAxxessModelObject = self.allData[indexPath.row]
+        let aAxxessModelObject = self.textData[indexPath.row]
         
         cell.idDetailLabel.text = aAxxessModelObject.id
         cell.typeDetailLabel.text = aAxxessModelObject.type
@@ -56,6 +52,4 @@ class AllTableViewController: UITableViewController {
         
         return cell
     }
-    
-
 }

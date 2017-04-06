@@ -18,6 +18,8 @@
 		B455370D1E96AC8C00B9933B /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455370C1E96AC8C00B9933B /* ButtonViewController.swift */; };
 		B455370F1E96B65900B9933B /* AllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455370E1E96B65900B9933B /* AllTableViewController.swift */; };
 		B45537121E96B70700B9933B /* AccessModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537111E96B70700B9933B /* AccessModelObject.swift */; };
+		B45537151E96C12100B9933B /* BasicStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537141E96C12100B9933B /* BasicStringTableViewCell.swift */; };
+		B45537171E96E5B600B9933B /* TextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537161E96E5B600B9933B /* TextTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		B455370C1E96AC8C00B9933B /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		B455370E1E96B65900B9933B /* AllTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
 		B45537111E96B70700B9933B /* AccessModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessModelObject.swift; sourceTree = "<group>"; };
+		B45537141E96C12100B9933B /* BasicStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicStringTableViewCell.swift; sourceTree = "<group>"; };
+		B45537161E96E5B600B9933B /* TextTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewController.swift; sourceTree = "<group>"; };
 		B5B5C0337DF1D990D9425234 /* Pods-Axxess Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axxess Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		DF7D443FF6F29E989DE36C68 /* Pods_Axxess_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axxess_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +113,7 @@
 		B45536E71E954CD300B9933B /* Axxess Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B45537131E96C0ED00B9933B /* Cells */,
 				B45537101E96B6F000B9933B /* Model */,
 				B455370B1E96ABF400B9933B /* View Controllers */,
 				B45537081E9553C400B9933B /* Managers */,
@@ -144,6 +149,7 @@
 			children = (
 				B455370C1E96AC8C00B9933B /* ButtonViewController.swift */,
 				B455370E1E96B65900B9933B /* AllTableViewController.swift */,
+				B45537161E96E5B600B9933B /* TextTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -154,6 +160,14 @@
 				B45537111E96B70700B9933B /* AccessModelObject.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B45537131E96C0ED00B9933B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B45537141E96C12100B9933B /* BasicStringTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,9 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45537151E96C12100B9933B /* BasicStringTableViewCell.swift in Sources */,
 				B455370F1E96B65900B9933B /* AllTableViewController.swift in Sources */,
 				B455370D1E96AC8C00B9933B /* ButtonViewController.swift in Sources */,
 				B45537121E96B70700B9933B /* AccessModelObject.swift in Sources */,
+				B45537171E96E5B600B9933B /* TextTableViewController.swift in Sources */,
 				B45536EB1E954CD400B9933B /* ViewController.swift in Sources */,
 				B455370A1E9557E800B9933B /* AxxessAlamofire.swift in Sources */,
 				B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */,

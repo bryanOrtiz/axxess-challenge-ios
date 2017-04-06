@@ -47,11 +47,15 @@ class ButtonViewController: UIViewController {
     }
     
     func displayAllViewController() -> Void {
-        
+        let allTableVC = AllTableViewController()
+        let navController = UINavigationController(rootViewController: allTableVC)
+        present(navController, animated: true, completion: nil)
     }
     
     func displayTextViewController() -> Void {
-        
+        let textTableVC = TextTableViewController()
+        let navController = UINavigationController(rootViewController: textTableVC)
+        present(navController, animated: true, completion: nil)
     }
     
     func displayImagesViewController() -> Void {
