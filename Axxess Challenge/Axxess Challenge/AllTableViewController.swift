@@ -13,7 +13,6 @@ class AllTableViewController: UITableViewController {
     fileprivate var allData = [AxxessModelObject]()
     
     // MARK: - View Controller Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,8 +24,17 @@ class AllTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView()
         
-        AxxessAlamofireManager.sharedInstance.getAxxessData { axxessModelObjects in
-            self.allData = axxessModelObjects
+        AxxessAlamofireManager.sharedInstance.getAxxessData { (axxessModelObjects, error) in
+            
+            if let error = error {
+                let alertController = UIAlertController(title: "ERROR", message: error.localizedDescription + "\n Check your internet connection. Go back to main screen and try again.", preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: "Got it", style: .cancel, handler: nil)
+                alertController.addAction(alertAction)
+                self.present(alertController, animated: true, completion: nil)
+                return
+            }
+            
+            self.allData = axxessModelObjects!
             self.tableView.reloadData()
         }
     }

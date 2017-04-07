@@ -27,24 +27,21 @@ class AxxessAlamofireManager: NSObject {
     }()
 
     // MARK: Class Methods
-    public func getAxxessData(completion: @escaping (_ objects: [AxxessModelObject]) -> Void) -> Void {
+    public func getAxxessData(completion: ((_ objects: [AxxessModelObject]?, _ error: Error?) -> Void)? = nil) -> Void {
         
         if self.allData != nil {
-            completion(allData!)
+            completion!(allData!, nil)
         }
         
         Alamofire.request("https://raw.githubusercontent.com/AxxessTech/Mobile-Projects/master/challenge.json", method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
             
-            print(response.request ?? "")  // original URL request
-            print(response.response ?? "") // HTTP URL response
-            print(response.data ?? "")     // server data
-            print(response.result)   // result of response serialization
+            if response.result.isFailure {
+                if completion != nil {
+                    completion!(nil, response.result.error)
+                }
+            }
             
             let retJSON = JSON(response.result.value!)
-            
-            if (retJSON.null != nil) {
-                print("JSON: \(retJSON)")
-            }
             
             var retArray = [AxxessModelObject]()
             
@@ -57,8 +54,9 @@ class AxxessAlamofireManager: NSObject {
             self.allData = retArray
             
             self.filterIntoImagesAndTextArrays()
-            
-            completion(retArray)
+            if completion != nil {
+                completion!(retArray, nil)
+            }
         }
     }
     
