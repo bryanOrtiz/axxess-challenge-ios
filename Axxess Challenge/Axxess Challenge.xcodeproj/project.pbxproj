@@ -98,6 +98,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B43359D31E9813A200C51B8E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B45536E81E954CD400B9933B /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		B43359D41E9813C600C51B8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B45536EF1E954CD400B9933B /* Assets.xcassets */,
+				B45536F41E954CD400B9933B /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B43359D51E9813D300C51B8E /* Default Files */ = {
+			isa = PBXGroup;
+			children = (
+				B45536EA1E954CD400B9933B /* ViewController.swift */,
+				B45536EC1E954CD400B9933B /* Main.storyboard */,
+				B45536F11E954CD400B9933B /* LaunchScreen.storyboard */,
+			);
+			name = "Default Files";
+			sourceTree = "<group>";
+		};
 		B45536DC1E954CD300B9933B = {
 			isa = PBXGroup;
 			children = (
@@ -121,16 +148,13 @@
 		B45536E71E954CD300B9933B /* Axxess Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B43359D31E9813A200C51B8E /* Delegate */,
 				B45537131E96C0ED00B9933B /* Cells */,
 				B45537101E96B6F000B9933B /* Model */,
 				B455370B1E96ABF400B9933B /* View Controllers */,
 				B45537081E9553C400B9933B /* Managers */,
-				B45536E81E954CD400B9933B /* AppDelegate.swift */,
-				B45536EA1E954CD400B9933B /* ViewController.swift */,
-				B45536EC1E954CD400B9933B /* Main.storyboard */,
-				B45536EF1E954CD400B9933B /* Assets.xcassets */,
-				B45536F11E954CD400B9933B /* LaunchScreen.storyboard */,
-				B45536F41E954CD400B9933B /* Info.plist */,
+				B43359D51E9813D300C51B8E /* Default Files */,
+				B43359D41E9813C600C51B8E /* Resources */,
 			);
 			path = "Axxess Challenge";
 			sourceTree = "<group>";
