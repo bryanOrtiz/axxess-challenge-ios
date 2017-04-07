@@ -11,22 +11,23 @@ import SwiftyJSON
 
 class AxxessModelObject: NSObject {
 
-    private(set) var id: String = ""
-    private(set) var type: String = ""
-    private(set) var date: String = ""
-    private(set) var data: String = ""
+    private(set) var id: String = "NO ID PROVIDED"
+    private(set) var type: String = "NO TYPE PROVIDED"
+    private(set) var date: String = "NO DATE PROVIDED"
+    private(set) var data: String = "NO DATA PROVIDED"
     
     init(withDict dict: Dictionary<String, JSON>) {
         for (key, value) in dict {
+            let newValue = value.stringValue.isEmpty ? "NO DATA PROVIDED" : value.stringValue
             switch key {
             case "id":
-                self.id = value.stringValue
+                self.id = newValue
             case "type":
-                self.type = value.stringValue
+                self.type = newValue
             case "date":
-                self.date = value.stringValue
+                self.date = newValue
             case "data":
-                self.data = value.stringValue
+                self.data = newValue
             default:
                 print("Default case")
             }
