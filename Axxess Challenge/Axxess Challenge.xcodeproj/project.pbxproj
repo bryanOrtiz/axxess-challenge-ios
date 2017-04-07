@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6D430279FDA882C608920CAD /* Pods_Axxess_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7D443FF6F29E989DE36C68 /* Pods_Axxess_Challenge.framework */; };
+		B43359D01E97F7B700C51B8E /* ExludingTypeFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43359CF1E97F7B700C51B8E /* ExludingTypeFieldTableViewCell.swift */; };
+		B43359D21E97F88E00C51B8E /* DetailTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43359D11E97F88E00C51B8E /* DetailTextViewController.swift */; };
 		B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536E81E954CD400B9933B /* AppDelegate.swift */; };
 		B45536EB1E954CD400B9933B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536EA1E954CD400B9933B /* ViewController.swift */; };
 		B45536EE1E954CD400B9933B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45536EC1E954CD400B9933B /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		AA3E44B44755D274EA0550CC /* Pods-Axxess Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axxess Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Axxess Challenge/Pods-Axxess Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B43359CF1E97F7B700C51B8E /* ExludingTypeFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExludingTypeFieldTableViewCell.swift; sourceTree = "<group>"; };
+		B43359D11E97F88E00C51B8E /* DetailTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTextViewController.swift; sourceTree = "<group>"; };
 		B45536E51E954CD300B9933B /* Axxess Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axxess Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45536E81E954CD400B9933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B45536EA1E954CD400B9933B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				B45537161E96E5B600B9933B /* TextTableViewController.swift */,
 				B45537181E96E79300B9933B /* ImagesTableViewController.swift */,
 				B455371A1E96F10000B9933B /* DetailImageViewController.swift */,
+				B43359D11E97F88E00C51B8E /* DetailTextViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				B45537141E96C12100B9933B /* BasicStringTableViewCell.swift */,
+				B43359CF1E97F7B700C51B8E /* ExludingTypeFieldTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43359D01E97F7B700C51B8E /* ExludingTypeFieldTableViewCell.swift in Sources */,
 				B45537151E96C12100B9933B /* BasicStringTableViewCell.swift in Sources */,
 				B455370F1E96B65900B9933B /* AllTableViewController.swift in Sources */,
 				B455370D1E96AC8C00B9933B /* ButtonViewController.swift in Sources */,
@@ -342,6 +349,7 @@
 				B455370A1E9557E800B9933B /* AxxessAlamofire.swift in Sources */,
 				B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */,
 				B455371B1E96F10000B9933B /* DetailImageViewController.swift in Sources */,
+				B43359D21E97F88E00C51B8E /* DetailTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
