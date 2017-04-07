@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This UITableViewController will only show data in regards to text
 class TextTableViewController: UITableViewController {
 
     fileprivate var textData = [AxxessModelObject]()

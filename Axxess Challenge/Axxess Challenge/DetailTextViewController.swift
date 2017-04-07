@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 
+/// This UIViewController should show a detailed view of the "text" object
 class DetailTextViewController: UIViewController {
 
     // MARK: Properties
@@ -31,6 +32,9 @@ class DetailTextViewController: UIViewController {
     }
     
     // MARK: UI Config
+    
+    /// This method creats a dynamic UIScrollView that will grow based on the size of the String 
+    /// associated with data
     func createUI() -> Void {
         
         self.view.backgroundColor = UIColor.white

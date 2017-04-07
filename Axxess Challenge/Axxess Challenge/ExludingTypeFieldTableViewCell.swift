@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This class should display every field from the parsed JSON object in String format exluding the type field
 class ExcludingTypeFieldTableViewCell: UITableViewCell {
 
     // MARK: Properties
@@ -21,6 +22,11 @@ class ExcludingTypeFieldTableViewCell: UITableViewCell {
     
     // MARK: Initializers
     
+    /// We overrided initWithStyle:resuseIdentifier so that we can programmatically set the UI
+    ///
+    /// - Parameters:
+    ///   - style: see superclass
+    ///   - reuseIdentifier: see superclass
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -33,6 +39,7 @@ class ExcludingTypeFieldTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// We overrided awakeFromNib so that we can programmatically set the UI
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -65,6 +72,7 @@ class ExcludingTypeFieldTableViewCell: UITableViewCell {
         dataDetailLabel.lineBreakMode = .byTruncatingTail
     }
     
+    /// Create Snapkit constraints
     func createViewHierarchy() -> Void {
         
         self.contentView.addSubview(idTitleLabel)

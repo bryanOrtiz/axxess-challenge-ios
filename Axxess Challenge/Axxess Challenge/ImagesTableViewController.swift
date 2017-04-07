@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This UITableViewController will show data only with regards to "image" type
 class ImagesTableViewController: UITableViewController {
 
     fileprivate var imageData = [AxxessModelObject]()

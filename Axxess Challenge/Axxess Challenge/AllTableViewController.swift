@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This UITableViewController will display all data regardless of type
 class AllTableViewController: UITableViewController {
 
     fileprivate var allData = [AxxessModelObject]()
@@ -71,6 +72,7 @@ class AllTableViewController: UITableViewController {
         
         let detailVC: UIViewController?
         
+        // add switch to display next level of content in specific UIViewController
         switch axxessModelObject.type {
         case "text",
              "other":

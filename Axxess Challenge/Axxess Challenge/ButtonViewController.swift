@@ -9,6 +9,8 @@
 import UIKit
 import SnapKit
 
+
+/// Main View controller that will allow the user to either see All data, Text ONLY, or Images ONLY
 class ButtonViewController: UIViewController {
 
     // MARK: View Controller Lifecycle
@@ -17,6 +19,11 @@ class ButtonViewController: UIViewController {
 
         self.view.backgroundColor = .white
         
+        self.configUI()
+    }
+    
+    // MARK: Configure UI
+    func configUI() -> Void {
         let allButton = UIButton()
         allButton.setTitle("All", for: .normal)
         allButton.setTitleColor(.blue, for: .normal)
@@ -52,7 +59,7 @@ class ButtonViewController: UIViewController {
         }
     }
     
-    // Mark: Navigation
+    // MARK: Navigation
     func displayAllViewController() -> Void {
         let allTableVC = AllTableViewController()
         self.displayViewControllerWithNavController(viewController: allTableVC)
@@ -67,7 +74,11 @@ class ButtonViewController: UIViewController {
         let imageTableVC = ImagesTableViewController()
         self.displayViewControllerWithNavController(viewController: imageTableVC)
     }
-
+    
+    /// Created abstraction to present a UINavigationController with a root UIViewController
+    ///
+    /// - Parameter viewController: this view controller will become the root view controller of the 
+    /// of the UINavigationController
     func displayViewControllerWithNavController(viewController: UIViewController) -> Void {
         let navController = UINavigationController(rootViewController: viewController)
         

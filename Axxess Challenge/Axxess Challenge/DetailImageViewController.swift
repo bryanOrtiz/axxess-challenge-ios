@@ -11,6 +11,8 @@ import SnapKit
 import AlamofireImage
 import MBProgressHUD
 
+/// This UIViewController should show the id of the object as its title and should show an image 
+/// that is downloaded using AlamofireImage for the full screen
 class DetailImageViewController: UIViewController {
 
     // MARK: Properties

@@ -9,11 +9,12 @@
 import UIKit
 import SnapKit
 
+/// This class should display every field from the parsed JSON object in String format
 class BasicStringTableViewCell: UITableViewCell {
 
     // MARK: Properties
     
-    fileprivate let idTitleLabel = UILabel()
+    fileprivate let idTitleLabel = UILabel() // some properties are fileprivate because they need to be access only by this class
     let idDetailLabel = UILabel()
     fileprivate let typeTitleLabel = UILabel()
     let typeDetailLabel = UILabel()
@@ -24,6 +25,11 @@ class BasicStringTableViewCell: UITableViewCell {
     
     // MARK: Initializers
     
+    /// We overrided initWithStyle:resuseIdentifier so that we can programmatically set the UI
+    ///
+    /// - Parameters:
+    ///   - style: see superclass
+    ///   - reuseIdentifier: see superclass
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -36,6 +42,7 @@ class BasicStringTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// We overrided awakeFromNib so that we can programmatically set the UI
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -73,6 +80,7 @@ class BasicStringTableViewCell: UITableViewCell {
         dataDetailLabel.lineBreakMode = .byTruncatingTail
     }
     
+    /// Create Snapkit constraints
     func createViewHierarchy() -> Void {
         
         self.contentView.addSubview(idTitleLabel)

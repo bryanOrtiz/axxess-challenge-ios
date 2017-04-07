@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 
+/// This class represents the model object we get back from the raw JSON. 
+/// We are allowed to parse the data so we can more easily access it here.
 class AxxessModelObject: NSObject {
 
     private(set) var id: String = "NO ID PROVIDED"
@@ -18,6 +20,8 @@ class AxxessModelObject: NSObject {
     
     init(withDict dict: Dictionary<String, JSON>) {
         for (key, value) in dict {
+            
+            // Use Ternary operator to create value if is empty
             let newValue = value.stringValue.isEmpty ? "NO DATA PROVIDED" : value.stringValue
             switch key {
             case "id":

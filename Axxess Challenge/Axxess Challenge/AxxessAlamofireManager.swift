@@ -10,6 +10,10 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+/// This singleton gets the bulk of our data. It manages our data into three separate Arrays: 
+/// allData - which is all data regardless of type, 
+/// textData - which is specific to those of type "text"
+/// imageData - which is specific to those of type "image"
 class AxxessAlamofireManager: NSObject {
 
     // MARK: Properties
@@ -27,6 +31,15 @@ class AxxessAlamofireManager: NSObject {
     }()
 
     // MARK: Class Methods
+    
+    /// This our main network call. It helps us to also "cache" the data we get back to a single property.
+    /// allData. If we have it cached, then return out completion block with data we need instead of making 
+    /// multiple network calls.
+    ///
+    /// - Parameter completion: Our completion acts as an Objective-C block in that it executes after we have
+    /// made our network call and depending on wheather Alamofire succeeded or not, it will return an array
+    /// of parsed data from the raw JSON or an error if it fails. This completion is an optional so if we only
+    /// want to execute the function and not hit the completion we can.
     public func getAxxessData(completion: ((_ objects: [AxxessModelObject]?, _ error: Error?) -> Void)? = nil) -> Void {
         
         if self.allData != nil {
@@ -60,6 +73,7 @@ class AxxessAlamofireManager: NSObject {
         }
     }
     
+    /// Convenience method that filters our data for us
     func filterIntoImagesAndTextArrays() -> Void {
         if self.allData == nil {
             return
