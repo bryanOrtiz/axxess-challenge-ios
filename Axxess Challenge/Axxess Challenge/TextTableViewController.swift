@@ -23,7 +23,7 @@ class TextTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView()
         
-        self.textData = AxxessAlamofire.sharedInstance.textData!
+        self.textData = AxxessAlamofireManager.sharedInstance.textData!
         self.tableView.reloadData()
     }
 

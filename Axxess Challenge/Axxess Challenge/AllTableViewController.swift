@@ -25,7 +25,7 @@ class AllTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView()
         
-        AxxessAlamofire.sharedInstance.getJSONV3 { axxessModelObjects in
+        AxxessAlamofireManager.sharedInstance.getAxxessData { axxessModelObjects in
             self.allData = axxessModelObjects
             self.tableView.reloadData()
         }

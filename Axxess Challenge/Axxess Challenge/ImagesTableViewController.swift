@@ -25,7 +25,7 @@ class ImagesTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView()
         
-        self.imageData = AxxessAlamofire.sharedInstance.imageData!
+        self.imageData = AxxessAlamofireManager.sharedInstance.imageData!
         self.tableView.reloadData()
     }
     

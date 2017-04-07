@@ -16,7 +16,7 @@
 		B45536F01E954CD400B9933B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45536EF1E954CD400B9933B /* Assets.xcassets */; };
 		B45536F31E954CD400B9933B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45536F11E954CD400B9933B /* LaunchScreen.storyboard */; };
 		B45536FE1E954CD400B9933B /* Axxess_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */; };
-		B455370A1E9557E800B9933B /* AxxessAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537091E9557E800B9933B /* AxxessAlamofire.swift */; };
+		B455370A1E9557E800B9933B /* AxxessAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537091E9557E800B9933B /* AxxessAlamofireManager.swift */; };
 		B455370D1E96AC8C00B9933B /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455370C1E96AC8C00B9933B /* ButtonViewController.swift */; };
 		B455370F1E96B65900B9933B /* AllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455370E1E96B65900B9933B /* AllTableViewController.swift */; };
 		B45537121E96B70700B9933B /* AccessModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45537111E96B70700B9933B /* AccessModelObject.swift */; };
@@ -50,7 +50,7 @@
 		B45536F91E954CD400B9933B /* Axxess ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axxess ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45536FD1E954CD400B9933B /* Axxess_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axxess_ChallengeTests.swift; sourceTree = "<group>"; };
 		B45536FF1E954CD400B9933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B45537091E9557E800B9933B /* AxxessAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxxessAlamofire.swift; sourceTree = "<group>"; };
+		B45537091E9557E800B9933B /* AxxessAlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxxessAlamofireManager.swift; sourceTree = "<group>"; };
 		B455370C1E96AC8C00B9933B /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		B455370E1E96B65900B9933B /* AllTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
 		B45537111E96B70700B9933B /* AccessModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessModelObject.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		B45537081E9553C400B9933B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				B45537091E9557E800B9933B /* AxxessAlamofire.swift */,
+				B45537091E9557E800B9933B /* AxxessAlamofireManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 				B45537171E96E5B600B9933B /* TextTableViewController.swift in Sources */,
 				B45536EB1E954CD400B9933B /* ViewController.swift in Sources */,
 				B45537191E96E79300B9933B /* ImagesTableViewController.swift in Sources */,
-				B455370A1E9557E800B9933B /* AxxessAlamofire.swift in Sources */,
+				B455370A1E9557E800B9933B /* AxxessAlamofireManager.swift in Sources */,
 				B45536E91E954CD400B9933B /* AppDelegate.swift in Sources */,
 				B455371B1E96F10000B9933B /* DetailImageViewController.swift in Sources */,
 				B43359D21E97F88E00C51B8E /* DetailTextViewController.swift in Sources */,
