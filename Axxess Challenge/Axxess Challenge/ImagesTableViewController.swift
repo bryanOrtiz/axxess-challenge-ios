@@ -19,7 +19,7 @@ class ImagesTableViewController: UITableViewController {
         
         self.title = "Image"
         
-        self.tableView.register(BasicStringTableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        self.tableView.register(ExcludingTypeFieldTableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         
         self.tableView.estimatedRowHeight = 40.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -43,15 +43,22 @@ class ImagesTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: BasicStringTableViewCell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! BasicStringTableViewCell
+        let cell: ExcludingTypeFieldTableViewCell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! ExcludingTypeFieldTableViewCell
         
         let aAxxessModelObject = self.imageData[indexPath.row]
         
         cell.idDetailLabel.text = aAxxessModelObject.id
-        cell.typeDetailLabel.text = aAxxessModelObject.type
         cell.dateDetailLabel.text = aAxxessModelObject.date
         cell.dataDetailLabel.text = aAxxessModelObject.data
         
         return cell
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let axxessModelObject = self.imageData[indexPath.row]
+        let detailImageVC = DetailImageViewController(withAxxessModelObject: axxessModelObject)
+        self.navigationController?.pushViewController(detailImageVC, animated: true)
     }
 }
