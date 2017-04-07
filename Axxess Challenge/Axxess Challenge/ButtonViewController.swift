@@ -11,6 +11,7 @@ import SnapKit
 
 class ButtonViewController: UIViewController {
 
+    // MARK: View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,22 +47,33 @@ class ButtonViewController: UIViewController {
         }
     }
     
+    // Mark: Navigation
     func displayAllViewController() -> Void {
         let allTableVC = AllTableViewController()
-        let navController = UINavigationController(rootViewController: allTableVC)
-        present(navController, animated: true, completion: nil)
+        self.displayViewControllerWithNavController(viewController: allTableVC)
     }
     
     func displayTextViewController() -> Void {
         let textTableVC = TextTableViewController()
-        let navController = UINavigationController(rootViewController: textTableVC)
-        present(navController, animated: true, completion: nil)
+        self.displayViewControllerWithNavController(viewController: textTableVC)
     }
     
     func displayImagesViewController() -> Void {
         let imageTableVC = ImagesTableViewController()
-        let navController = UINavigationController(rootViewController: imageTableVC)
-        present(navController, animated: true, completion: nil)
+        self.displayViewControllerWithNavController(viewController: imageTableVC)
     }
 
+    func displayViewControllerWithNavController(viewController: UIViewController) -> Void {
+        let navController = UINavigationController(rootViewController: viewController)
+        
+        let dismissNavBarButton = UIBarButtonItem(title: "Dismiss", style: .plain, target: self, action: #selector(dismissNavControllerAction))
+        viewController.navigationItem.leftBarButtonItem = dismissNavBarButton
+        
+        present(navController, animated: true, completion: nil)
+    }
+    
+    // MARK: Actions
+    func dismissNavControllerAction() -> Void {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
