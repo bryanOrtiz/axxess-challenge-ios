@@ -15,16 +15,21 @@ class ButtonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = .white
+        
         let allButton = UIButton()
         allButton.setTitle("All", for: .normal)
+        allButton.setTitleColor(.blue, for: .normal)
         allButton.addTarget(self, action: #selector(displayAllViewController), for: .touchUpInside)
         
         let textOnlyButton = UIButton()
         textOnlyButton.setTitle("Text", for: .normal)
+        textOnlyButton.setTitleColor(.blue, for: .normal)
         textOnlyButton.addTarget(self, action: #selector(displayTextViewController), for: .touchUpInside)
         
         let imagesOnlyButton = UIButton()
         imagesOnlyButton.setTitle("Images", for: .normal)
+        imagesOnlyButton.setTitleColor(.blue, for: .normal)
         imagesOnlyButton.addTarget(self, action: #selector(displayImagesViewController), for: .touchUpInside)
         
         self.view.addSubview(allButton)
