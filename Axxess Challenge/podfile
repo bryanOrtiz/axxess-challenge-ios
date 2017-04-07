@@ -5,4 +5,5 @@ target 'Axxess Challenge' do
     pod 'SnapKit'
     pod 'SwiftyJSON'
     pod 'AlamofireImage'
+    pod 'MBProgressHUD'
 end
