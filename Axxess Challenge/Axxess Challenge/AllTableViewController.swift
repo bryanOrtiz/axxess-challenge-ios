@@ -56,4 +56,23 @@ class AllTableViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let axxessModelObject = self.allData[indexPath.row]
+        
+        let detailVC: UIViewController?
+        
+        switch axxessModelObject.type {
+        case "text",
+             "other":
+            detailVC = DetailTextViewController(withAxxessModelObject: axxessModelObject)
+        case "image":
+            detailVC = DetailImageViewController(withAxxessModelObject: axxessModelObject)
+        default:
+            detailVC = DetailTextViewController(withAxxessModelObject: axxessModelObject)
+        }
+        
+        self.navigationController?.pushViewController(detailVC!, animated: true)
+    }
 }
